@@ -15,7 +15,7 @@ public class Person implements DisposableBean {
     System.out.println("Person Created");
   }
   
-  //DESTROY
+  //PRE DESTROY
   @PreDestroy
   public void preDestroy() {
     System.out.println("preDestroy()");
@@ -27,7 +27,7 @@ public class Person implements DisposableBean {
     System.out.println("destroy()");
   }
   
-  //DESTROY
+  //DESTROY METHOD
   public void destroyMethod() {
     System.out.println("destroyMethod()");
   }
